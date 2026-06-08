@@ -1,1 +1,19 @@
+/* This stylesheet controls global layout and typography for the Critocracy game page */
 
+h1 {
+    text-align: center;
+    color: darkslateblue;
+    text-transform: uppercase;
+}
+
+h2 {
+    background-color: #d9e6f2;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #222;
+    margin-bottom: 15px;
+}
