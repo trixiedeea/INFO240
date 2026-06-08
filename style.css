@@ -9,7 +9,7 @@ h1 {
 }
 
 h2 {
-    background-color: #1c93a6;
+    background-color: #643085;
     font-family: Papyrus, "Brush Script MT", Monaco;
     padding: 10px;
     color: #ffffff;
@@ -20,7 +20,7 @@ p {
     line-height: 1.6;
     color: #ffffff;
     margin-bottom: 15px;
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: Papyrus, "Brush Script MT", Monaco;
     text-align: justify;
     word-spacing: 1px;
 }
