@@ -24,3 +24,8 @@ p {
     text-align: justify;
     word-spacing: 1px;
 }
+
+li {
+    font-family: Papyrus, "Brush Script MT", Monaco;
+    color: #ffffff;
+}
