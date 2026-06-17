@@ -5,8 +5,8 @@ h1 {
     color: #ffffff;
     text-transform: uppercase;
     font-family: Papyrus, "Brush Script MT", Monaco;
-    border: 10px, #ffffff;
-     width: 50%;
+    border: 10px solid #ffffff;
+    width: 50%;
     margin: 0 auto;
     padding: 10px;
 }
