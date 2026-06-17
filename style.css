@@ -166,3 +166,9 @@ a {
         align-items: center;
     }
 }
+
+.image-large {
+    width: 800px;
+    display: block;
+    margin: 0 auto;
+}
