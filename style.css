@@ -46,6 +46,7 @@ a {
 
 .grid-Container {
     background-color: rgba(11, 85, 98, 0);
+    margin-bottom: 2%;
 }
 
 .role-Card, .grid-Item {
