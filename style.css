@@ -160,7 +160,7 @@ a {
     
     .opposes-Banner {
         writing-mode: vertical-rl;
-        text-orientation: mixed;
+        text-orientation: upright;
         display: flex;
         justify-content: center;
         align-items: center;
