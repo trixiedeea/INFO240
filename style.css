@@ -151,3 +151,37 @@ a {
     color: #ffffff;
 }
 
+@media screen and (max-width: 1024px) {
+
+    #role-Selection-Container {
+
+        grid-template-columns: 1fr auto 1fr;
+
+        grid-template-areas:
+            "colonialist opposes revolutionary"
+            "historian   opposes politician"
+            "artist      opposes entrepreneur";
+
+        gap: 20px;
+    }
+
+}
+
+.opposes-Banner {
+    grid-area: opposes;
+
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 2px solid #0b4852;
+    border-radius: 8px;
+    padding: 15px;
+
+    background-color: rgba(11, 78, 86, 0.726);
+
+    color: #ffffff;
+}
