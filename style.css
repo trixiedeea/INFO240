@@ -167,9 +167,16 @@ a {
 }
 
 .image-large {
-    width: 800px;
+    width: 100%;      /* Responsive */
+    max-width: 800px;
+    height: auto;
     display: block;
-    margin: 0 auto;
-    border: 5px solid #ffffff;
-    border-radius: 5%;
+}
+
+footer {
+    background-image: url("./Images/Critocracy.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff;
 }
