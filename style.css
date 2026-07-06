@@ -259,7 +259,7 @@ ol {
 }
 
 ul {
-    list-style-type: armenian;
+    list-style-type: "custom > ";
 }
 
 li {
