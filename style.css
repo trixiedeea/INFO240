@@ -195,3 +195,74 @@ footer {
     background-size: cover;
     color: #ffffff;
 }
+
+table {
+    width: 80%;
+    border-collapse: collapse;
+    font-family: Papyrus, "Brush Script MT", Monaco;
+    color: #ffffff;
+    margin: 3% auto;
+    background: #1c6fa6;
+    th {
+        border: 2px solid #ffffff;
+        text-align: center;
+        vertical-align: middle;
+        padding: 10px;
+    }
+    td {
+        border: 2px solid #ffffff;
+        text-align: left;
+        vertical-align: middle;
+        padding: 10px;
+    }
+
+    .header1 {
+        font-size: 31px;
+        font-weight: bold;
+        background-color: #1692a2;
+    }
+
+    .header2 {
+        font-size: 36px;
+        font-weight: bolder;
+        background-color: #1692a2;
+    }
+
+    .header3 {
+        font-size: 26px;
+        font-weight: bold;
+    }
+
+    .header4 {
+        font-size: 21px;
+    }
+
+    .text {
+        font-size: 16px;
+        text-align: left;
+    }
+
+    tfoot td {
+        border-top: 4px solid #ffffff;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    a {
+        color: #ffffff;
+    }
+}
+
+ol {
+    list-style-type: upper-roman;
+    color: #ffffff;
+}
+
+ul {
+    list-style-type: armenian;
+}
+
+li {
+    color: #ffffff;
+    font-family: Papyrus, "Brush Script MT", Monaco;
+}
