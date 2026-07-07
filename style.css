@@ -1,10 +1,19 @@
 /* Contains style rules for Critocracy */
 
+body {
+    background-color: #15427A;
+
+}
+
+footer {
+    text-align: center;
+
+}
+
 h1 {
     text-align: center;
     color: #ffffff;
     text-transform: uppercase;
-    font-family: Papyrus, "Brush Script MT", Monaco;
     width: 50%;
     margin: 0 auto;
     padding: 10px;
@@ -12,12 +21,12 @@ h1 {
 
 h2 {
     background-color: #1692a2;
+    border-radius: 10px;
     width: 30%;
     margin: 0 auto;
     padding: 10px;
     border: 2px solid white;
     text-align: center;
-    font-family: Papyrus, "Brush Script MT", Monaco;
     color: #ffffff;
 }
 
@@ -29,7 +38,6 @@ h3 {
     border: 2px solid white;
     border-radius: 5%;
     text-align: center;
-    font-family: Papyrus, "Brush Script MT", Monaco;
     color: #ffffff;
 }
 
@@ -37,7 +45,6 @@ p {
     font-size: 18px;
     line-height: 1.6;
     color: #ffffff;
-    font-family: Papyrus, "Brush Script MT", Monaco;
     text-align: justify;
     margin-bottom: 2%;
     margin-right:2%;
@@ -45,7 +52,6 @@ p {
 }
 
 li {
-    font-family: Papyrus, "Brush Script MT", Monaco;
     color: #ffffff;
 }
 a {
@@ -60,8 +66,12 @@ a {
     margin-bottom: 2%;
 }
 
+.role-Card {
+    border: 2px solid #ffffff;
+}
+
 .role-Card, .grid-Item {
-    border: 2px solid #0b4852;
+    border: 2px solid #ffffff;
     border-radius: 8px;
     padding: 15px;
     background-color: rgba(11, 78, 86, 0.726);
@@ -150,15 +160,6 @@ a {
     grid-area: opposes;
 }
 
-.opposes-Banner {
-    border: 2px solid #0b4852;
-    border-radius: 8px;
-    padding: 15px;
-    background-color: rgba(11, 78, 86, 0.726);
-    text-align: center;
-    color: #ffffff;
-}
-
 @media screen and (max-width: 1024px) {
     #role-Selection-Container {
         grid-template-columns: 1fr auto 1fr;
@@ -167,14 +168,6 @@ a {
             "historian   opposes politician"
             "artist      opposes entrepreneur";
         gap: 20px;
-    }
-    
-    .opposes-Banner {
-        writing-mode: vertical-rl;
-        text-orientation: upright;
-        display: flex;
-        justify-content: center;
-        align-items: center;
     }
 }
 
@@ -199,58 +192,57 @@ footer {
 table {
     width: 80%;
     border-collapse: collapse;
-    font-family: Papyrus, "Brush Script MT", Monaco;
     color: #ffffff;
     margin: 3% auto;
     background: #1c6fa6;
-    th {
-        border: 2px solid #ffffff;
-        text-align: center;
-        vertical-align: middle;
-        padding: 10px;
-    }
-    td {
-        border: 2px solid #ffffff;
-        text-align: left;
-        vertical-align: middle;
-        padding: 10px;
-    }
+}
+    
+table a {
+    color: #ffffff;
+}
+th {
+    border: 2px solid #ffffff;
+    text-align: center;
+    vertical-align: middle;
+    padding: 10px;
+}
+td {
+    border: 2px solid #ffffff;
+    text-align: left;
+    vertical-align: middle;
+    padding: 10px;
+}
 
-    .header1 {
-        font-size: 31px;
-        font-weight: bold;
-        background-color: #1692a2;
-    }
+.header1 {
+    font-size: 31px;
+    font-weight: bold;
+    background-color: #1692a2;
+}
 
-    .header2 {
-        font-size: 36px;
-        font-weight: bolder;
-        background-color: #1692a2;
-    }
+.header2 {
+    font-size: 36px;
+    font-weight: bolder;
+    background-color: #1692a2;
+}
 
-    .header3 {
-        font-size: 26px;
-        font-weight: bold;
-    }
+.header3 {
+    font-size: 26px;
+    font-weight: bold;
+}
 
-    .header4 {
-        font-size: 21px;
-    }
+.header4 {
+    font-size: 21px;
+}
 
-    .text {
-        font-size: 16px;
-        text-align: left;
-    }
+.text {
+    font-size: 16px;
+    text-align: left;
+}
 
-    tfoot td {
-        border-top: 4px solid #ffffff;
-        font-size: 14px;
-        text-align: center;
-    }
-
-    a {
-        color: #ffffff;
-    }
+tfoot td {
+    border-top: 4px solid #ffffff;
+    font-size: 14px;
+    text-align: center;
 }
 
 ol {
@@ -259,10 +251,152 @@ ol {
 }
 
 ul {
-    list-style-type: georgian;
+    list-style-type: disc;
 }
 
 li {
     color: #ffffff;
-    font-family: Papyrus, "Brush Script MT", Monaco;
+}
+
+.navbar a {
+    display: block;
+    padding: 15px 20px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+/*change background color back to #173159*/
+.navbar {
+    list-style: none;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 0;
+    border: 2px solid #ffffff;
+    background-color: #173159;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+}
+
+.navbar > li {
+    position: relative;
+}
+
+.navbar > li > a {
+    display: block;
+    padding: 10px 12px;
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+}
+
+.paths {
+    display: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #173159;
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    min-width: 120px;
+}
+
+.navbar > li:hover > .paths {
+    display: block;
+}
+
+.paths a {
+    display: block;
+    padding: 6px 9px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: #FFFFFF;
+    background-color: #15427A;
+    transform: scale(1.25);
+    font-weight: bold;
+}
+
+.paths a:hover {
+    color: #ffffff;
+    background-color: #15427A;
+    transform: scale(1.25);
+    font-weight: bold;
+}
+
+fieldset {
+    margin-bottom: 10px;
+    background-color: #1692a2;
+}
+
+.innerField {
+    background-color: #04265ce8;
+}
+
+form {
+    color: #ffffff;
+    font-size: 14px;
+    margin-left: 15%;
+    margin-right: 15%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+form fieldset {
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+form legend {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.form-title {
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.form-description {
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: #e4e2e2;
+}
+
+form label {
+    text-align: left;
+    color: #ffffff;
+}
+
+form input {
+    text-align: left;
+    color: #434343;
+}
+
+form output {
+    color: #ffffff;
+}
+
+.small-text {
+    font-size: 11px;
+    font-weight: normal;
+}
+
+.navList > li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    color: #132838;
 }
