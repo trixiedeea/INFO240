@@ -342,7 +342,11 @@ fieldset {
 .formGrid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 15px;
+    gap: 10px;
+}
+
+.fullWidth {
+    grid-column: 1 / -1;
 }
 
 form {
