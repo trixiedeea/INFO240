@@ -349,15 +349,16 @@ Play Critocracy Online
             </fieldset>
 
             <fieldset class="innerField">
-                <legend>Opponent Type</legend>
-                <input type="radio" id="humans" name="opponentType" value="humans">
-                <label for="humans">Humans</label>
-                <br>
-                <input type="radio" id="AI" name="opponentType" value="AI">
-                <label for="AI">AI</label>
-                <br>
-                <input type="radio" id="both" name="opponentType" value="both">
-                <label for="both">Both</label>
+                <legend>Opponent Type</legend>\
+                <label class="small-text">Do You Play With Humans, AI or both?:</label><br>
+                    <input type="radio" id="humans" name="opponentType" value="humans">
+                    <label for="humans">Humans</label>
+                    <br>
+                    <input type="radio" id="AI" name="opponentType" value="AI">
+                    <label for="AI">AI</label>
+                    <br>
+                    <input type="radio" id="both" name="opponentType" value="both">
+                    <label for="both">Both</label>
             </fieldset>
 
             <fieldset class="innerField fullWidth">
@@ -367,12 +368,8 @@ Play Critocracy Online
                 </label>
                 <br><br>
                 <input
-                    type="range"
-                    id="timesPlayed"
-                    name="timesPlayed"
-                    min="0"
-                    max="50"
-                    value="25"
+                    type="range" id="timesPlayed" name="timesPlayed"
+                    min="0" max="50" value="25"
                     oninput="scoreOutput.value = this.value">
                 <output id="scoreOutput">
                     25

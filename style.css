@@ -339,6 +339,12 @@ fieldset {
     background-color: #04265ce8;
 }
 
+.formGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
 form {
     color: #ffffff;
     font-size: 14px;
